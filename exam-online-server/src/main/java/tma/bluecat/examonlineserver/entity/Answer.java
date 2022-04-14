@@ -48,12 +48,4 @@ public class Answer implements Serializable {
     public void setCorrect(boolean correct) {
         isCorrect = correct;
     }
-
-    public Question getQuestionid() {
-        return questionid;
-    }
-
-    public void setQuestionid(Question questionid) {
-        this.questionid = questionid;
-    }
 }

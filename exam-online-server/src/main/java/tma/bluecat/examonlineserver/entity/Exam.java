@@ -24,6 +24,9 @@ public class Exam implements Serializable {
     @OneToMany(mappedBy = "examid")
     private List<Result> results;
 
+    @OneToMany(mappedBy = "examid")
+    private List<QuesExam> quesExams;
+
     @ManyToOne
     @JoinColumn(name = "teacher_id", referencedColumnName = "id")
     private Teacher teacherid;

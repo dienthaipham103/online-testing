@@ -32,11 +32,6 @@ public class Student implements Serializable {
     @OneToMany(mappedBy = "studentid")
     private List<Result> results;
 
-    public Class getClassid() {
-        return classid;
-    }
-
-
     public Student() {
 
     }
@@ -81,10 +76,13 @@ public class Student implements Serializable {
         this.password = password;
     }
 
+    public Class getClassid() {
+        return classid;
+    }
+
     public void setClassid(Class classid) {
         this.classid = classid;
     }
-
 
     @Override
     public int hashCode() {

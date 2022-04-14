@@ -21,6 +21,9 @@ public class Question implements Serializable {
     @OneToMany(mappedBy = "questionid")
     private List<Answer> answers;
 
+    @OneToMany(mappedBy = "questionid")
+    private  List<QuesExam> quesExams;
+
     @ManyToOne
     @JoinColumn(name = "subject_id", referencedColumnName = "id")
     private Subject subjectid;
@@ -51,6 +54,14 @@ public class Question implements Serializable {
 
     public void setType(int type) {
         this.type = type;
+    }
+
+    public List<Answer> getAnswers() {
+        return answers;
+    }
+
+    public void setAnswers(List<Answer> answers) {
+        this.answers = answers;
     }
 
     public Subject getSubjectid() {
