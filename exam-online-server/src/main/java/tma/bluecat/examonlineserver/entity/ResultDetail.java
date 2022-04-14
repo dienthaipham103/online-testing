@@ -11,6 +11,9 @@ public class ResultDetail implements Serializable {
     @Column(name = "id", nullable = false)
     private Long id;
 
+    @Column(name = "selected")
+    private String selected;
+
     @ManyToOne
     @JoinColumn(name = "quesExam_id", referencedColumnName = "id")
     private QuesExam quesExamid;
@@ -41,5 +44,13 @@ public class ResultDetail implements Serializable {
 
     public void setResultid(Result resultid) {
         this.resultid = resultid;
+    }
+
+    public String getSelected() {
+        return selected;
+    }
+
+    public void setSelected(String selected) {
+        this.selected = selected;
     }
 }

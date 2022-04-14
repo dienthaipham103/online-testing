@@ -11,6 +11,6 @@ import java.util.List;
 @Repository
 public interface ResultDetailRepository extends JpaRepository<ResultDetail, Long> {
 
-    @Query("SELECT rs FROM ResultDetail rd WHERE rd.resultid.id = :id")
+    @Query("SELECT rd FROM ResultDetail rd WHERE rd.resultid.id = :id")
     List<ResultDetail> getResultDetailByResultId(@Param("id") Long id);
 }
