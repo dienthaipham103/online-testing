@@ -23,6 +23,18 @@ public class QuesExam implements Serializable {
     @JoinColumn(name = "exam_id", referencedColumnName = "id")
     private Exam examid;
 
+    public QuesExam() {
+
+    }
+
+    public QuesExam(Long id) {
+        this.id = id;
+    }
+
+    public QuesExam(List<ResultDetail> resultDetails) {
+        this.resultDetails = resultDetails;
+    }
+
     public Long getId() {
         return id;
     }

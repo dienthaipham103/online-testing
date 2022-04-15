@@ -25,6 +25,17 @@ public class Answer implements Serializable {
 
     }
 
+    public Answer(Long id) {
+        this.id = id;
+    }
+
+    public Answer(Long id, String content, boolean isCorrect, Question questionid) {
+        this.id = id;
+        this.content = content;
+        this.isCorrect = isCorrect;
+        this.questionid = questionid;
+    }
+
     public Long getId() {
         return id;
     }

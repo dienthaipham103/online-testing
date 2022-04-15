@@ -36,6 +36,10 @@ public class Student implements Serializable {
 
     }
 
+    public Student(Long id) {
+        this.id = id;
+    }
+
     public Student(Long id, String name, String userName, String password, Class classid) {
         this.id = id;
         this.name = name;

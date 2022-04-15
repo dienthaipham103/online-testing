@@ -1,0 +1,54 @@
+.containerNav {
+    display: block;
+    visibility: inherit;
+    overflow-x: visible;
+    background-color: #F5F5F5;
+    height: 80px;
+}
+
+.bodyNav {
+    display: flex;
+    flex-direction: column;
+
+    &>ul {
+        text-align: center;
+        list-style: none;
+
+        &>li {
+            padding: 0px 30px;
+            height: 36px;
+
+            position: relative;
+            box-sizing: border-box;
+            overflow: visible;
+            visibility: inherit;
+
+            display: inline-block;
+            cursor: pointer;
+
+            vertical-align: middle;
+            font-size: 20px;
+
+            margin-top: 10px;
+        }
+    }
+}
+
+.logo {
+    float: left;
+    margin-left: 50px;
+}
+
+.active,
+.bodyNav>ul>li:hover {
+    color: #673ab7;
+    font-weight: bold;
+}
+
+.title {
+    text-align: center;
+    display: block;
+    line-height: 36px;
+    font-size: 18px;
+    margin-top: -2px;
+}

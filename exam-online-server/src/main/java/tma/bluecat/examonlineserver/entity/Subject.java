@@ -25,6 +25,15 @@ public class Subject implements Serializable {
 
     }
 
+    public Subject(Long id) {
+        this.id = id;
+    }
+
+    public Subject(Long id, String name) {
+        this.id = id;
+        this.name = name;
+    }
+
     public Long getId() {
         return id;
     }

@@ -39,6 +39,19 @@ public class Exam implements Serializable {
 
     }
 
+    public Exam(Long id) {
+        this.id = id;
+    }
+
+    public Exam(Long id, String name, int time, int numberQuestion, Teacher teacherid, Subject subjectid) {
+        this.id = id;
+        this.name = name;
+        this.time = time;
+        this.numberQuestion = numberQuestion;
+        this.teacherid = teacherid;
+        this.subjectid = subjectid;
+    }
+
     public Long getId() {
         return id;
     }

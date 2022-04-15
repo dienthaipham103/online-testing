@@ -32,6 +32,18 @@ public class Teacher implements Serializable {
 
     }
 
+    public Teacher(Long id) {
+        this.id = id;
+    }
+
+    public Teacher(Long id, String name, String userName, String password, Date yearOfBirth) {
+        this.id = id;
+        this.name = name;
+        this.userName = userName;
+        this.password = password;
+        this.yearOfBirth = yearOfBirth;
+    }
+
     public Long getId() {
         return id;
     }

@@ -49,6 +49,20 @@ public class Result implements Serializable {
 
     }
 
+    public Result(Long id) {
+        this.id = id;
+    }
+
+    public Result(Long id, Date date, float mark, String time, boolean type, Student studentid, Exam examid) {
+        this.id = id;
+        this.date = date;
+        this.mark = mark;
+        this.time = time;
+        this.type = type;
+        this.studentid = studentid;
+        this.examid = examid;
+    }
+
     public Long getId() {
         return id;
     }

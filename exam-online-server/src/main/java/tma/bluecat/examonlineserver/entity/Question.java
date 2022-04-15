@@ -32,6 +32,17 @@ public class Question implements Serializable {
 
     }
 
+    public Question(Long id) {
+        this.id = id;
+    }
+
+    public Question(Long id, String content, int type, Subject subjectid) {
+        this.id = id;
+        this.content = content;
+        this.type = type;
+        this.subjectid = subjectid;
+    }
+
     public Long getId() {
         return id;
     }

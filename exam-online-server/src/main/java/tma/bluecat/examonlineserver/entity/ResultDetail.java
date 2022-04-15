@@ -22,6 +22,21 @@ public class ResultDetail implements Serializable {
     @JoinColumn(name = "result_id", referencedColumnName = "id")
     private Result resultid;
 
+    public ResultDetail() {
+
+    }
+
+    public ResultDetail(Long id) {
+        this.id = id;
+    }
+
+    public ResultDetail(Long id, String selected, QuesExam quesExamid, Result resultid) {
+        this.id = id;
+        this.selected = selected;
+        this.quesExamid = quesExamid;
+        this.resultid = resultid;
+    }
+
     public Long getId() {
         return id;
     }
