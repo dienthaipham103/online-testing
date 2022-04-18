@@ -1,0 +1,12 @@
+.infoBox-wrapper {
+    padding: 20px;
+    border: 2px solid rgb(10, 227, 10);
+    .infoBox-number {
+        font-size: 32px;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+    .infoBox-text {
+        text-transform: uppercase;
+    }
+}

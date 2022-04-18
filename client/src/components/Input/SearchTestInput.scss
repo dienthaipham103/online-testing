@@ -1,0 +1,21 @@
+.searchTest-input {
+    width: 50%;
+    height: 28px;
+    padding: 0 10px;
+    border: 1px solid rgba(128, 128, 128, 0.3);
+    &:focus {
+        outline: 1px solid #0274be;
+    }
+}
+
+.searchTest-button {
+    border: 1px solid red;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    cursor: pointer;
+    .searchTest-icon {
+        font-size: 22px;
+        margin: auto;
+    }
+}
