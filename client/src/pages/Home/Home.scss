@@ -1,0 +1,54 @@
+.home-background_image {
+  background-image: url("https://tracnghiemykhoa.com/wp-content/uploads/2019/08/home.jpg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  height: 360px;
+  .home-background1 {
+    position: relative;
+    height: 30px;
+    background-color: #003e53;
+    width: calc(50% - 15px);
+    &:after {
+      position: absolute;
+      content: "";
+      width: 0px;
+      height: 0px;
+      border-bottom: 16px solid #003e53;
+      border-left: 16px solid #003e53;
+      border-right: 15px solid transparent;
+      border-top: 15px solid transparent;
+      top: 0;
+      left: 100%;
+    }
+  }
+  .home-background2 {
+    position: relative;
+    height: 30px;
+    background-color: #003e53;
+    width: calc(50% - 15px);
+    &:before {
+      position: absolute;
+      content: "";
+      width: 0px;
+      height: 0px;
+      border-bottom: 15px solid #003e53;
+      border-left: 15px solid transparent;
+      border-right: 15px solid #003e53;
+      border-top: 15px solid transparent;
+      top: 0;
+      left: -30px;
+    }
+  }
+  .home-background {
+    height: 90px;
+    background-color: #003e53;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 80px 30px 80px;
+    .home-title {
+        color: #fff;
+        font-size: 24px;
+    }
+  }
+}
